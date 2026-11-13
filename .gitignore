@@ -1,0 +1,110 @@
+# ==============================================================================
+# Environment & Secrets
+# ==============================================================================
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables & secrets (allow .env.example)
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+
+# ==============================================================================
+# Python / Backend
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ==============================================================================
+# Node.js & Frontend
+# ==============================================================================
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==============================================================================
+# Modal / Cloud / AI Model Weights & Cache
+# ==============================================================================
+.modal/
+.modal.token.json
+.cache/
+hf_cache/
+models/
+checkpoints/
+
+# Large model weights (keep out of git)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# ==============================================================================
+# Test Outputs, Audit Outputs & Generated Images
+# ==============================================================================
+audit_outputs/
+outputs/
+test_outputs/
+
+# ==============================================================================
+# Agent & Assistant Files
+# ==============================================================================
+.agents/
+.gemini/
+
+# ==============================================================================
+# IDE, Editor & OS Files
+# ==============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
